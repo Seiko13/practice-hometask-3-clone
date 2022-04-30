@@ -1,0 +1,196 @@
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --reverse-text-color: #FFFFFF;
+    --hero-footer-background-color: #2F303A;
+    --button-color: #F5F4FA;
+}
+
+body {
+    color: var(--primary-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+/* logo nav */
+span {
+    color: var(--accent-color);
+}
+
+.logo {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* site nav */
+
+.site-nav .link {
+    color: var(--title-text-color);
+    text-decoration: none;
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+.contact-nav .link {
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+
+
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+    color: var(--accent-color);
+}
+
+/* hero */
+
+.hero-title {
+    color: var(--reverse-text-color);
+    background-color: var(--hero-footer-background-color);
+    text-transform: uppercase;
+}
+
+.hero-button {
+    color: var(--reverse-text-color);
+    border: none;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 15px;
+
+    }
+
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--accent-color);
+    background-color: var(--button-color);
+}
+
+/* section */
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* about us */
+
+.about-list {
+    list-style: none;
+    }
+
+/* activity photo */
+
+.activity-list {
+    list-style: none;
+}
+
+
+/* our team members */
+.team-list {
+    list-style: none;
+}
+.team {
+    background-color: var(--button-color);
+}
+
+.member-name {
+    color: var(--title-text-color);
+}
+
+/* page footer */
+
+.page-footer {
+    background-color: var(--hero-footer-background-color);
+}
+
+.footer-logo {
+    color: var(--reverse-text-color);
+    text-decoration: none;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+    color: var(--accent-color);
+}
+
+.footer-address {
+    color: var(--reverse-text-color);
+}
+
+.footer-telephone {
+    color: var(--reverse-text-color);
+    opacity: 60%;
+}
+
+.footer-mail {
+    color: var(--reverse-text-color);
+    opacity: 60%;
+}
+
+
+ /* Potfolio page */
+
+.variants-list {
+    list-style: none;
+}
+
+/* our proposals buttons */
+
+.button {
+    color: var(--title-text-color);
+    background-color: var(--button-color);
+    border-radius: 4px;
+
+    font-size: 15px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--reverse-text-color);
+    background-color: var(--accent-color);
+}
+
+
+/* our projects */
+
+.project-list {
+    list-style: none;
+}
+
+.company-title {
+    color: var(--title-text-color);
+}
+
+
+/* log font color: #000000; */
+/* title font color: #212121; */
+/* paragraph font color #757575 */
+/* header/footer background-color #2F303A */
+/* white font color #FFFFFF */
+/* Blue main page/button color #2196F3 */
+/* Background section: #E5E5E5; */
+/* Background team #F5F4FA */
+/* footer 60% */
+
