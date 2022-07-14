@@ -9,16 +9,32 @@
 
     /* Fonts */
     /* font-family: 'Raleway', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {
+    margin: 0;
     background-color: var(--reverse-text-color);
     color: var(--primary-text-color);
 
     font-family: 'Roboto', sans-serif;
 }
 
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 /* Logo */
 
 /* logo nav */
@@ -41,14 +57,52 @@ body {
     color: var(--accent-color);
 }
 
-.list {
-        list-style: none;
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
 }
 
 
 /* site nav */
+/* .link { */
+
+.page-header {
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    /* justify-content: ; */
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+/*.site-nav .item {
+     outline: 2px solid red; */
+    /* margin-right: 50px; 
+} */
+
+/* .site-nav .item:last-child { 
+    margin-right: 0;
+} */
+
+/* .site-nav .item:not(:last-child) {
+    margin-right: 50px;
+} */
+
+.site-nav .item +.item {
+    margin-left: 50px;
+}
+
 
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -60,8 +114,32 @@ body {
     color: var(--accent-color);
 }
 
+/* Contact-nav */
+
+.contact-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-nav .item + .item {
+margin-left: 50px; 
+}
+
+/* .contact-nav .item:last-child { 
+    margin-left: 0;
+} */
+
+/* .contact-nav li {
+    outline: 2px solid red; */
+    /* margin-right: 50px; 
+} */
+
 
 .contact-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
@@ -80,16 +158,26 @@ body {
     color: var(--accent-color);
 }
 
+
 /* hero */
+.hero {
+    background-color: var(--hero-footer-background-color);
+    height: 600px;
+    text-align: center;
+}
 
 .hero-title {
+    /* display: inline-block;
+    width: 696px; */
+    text-align: center;
+    padding-top: 200px;
     color: var(--reverse-text-color);
-    background-color: var(--hero-footer-background-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     text-transform: uppercase;
+    /* outline: 2px solid red; */
+    margin-bottom: 30px;
 }
 
 .hero-button {
@@ -122,7 +210,13 @@ body {
 
 .about-list {
     list-style: none;
-    }
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-list .item {
+    width: 270px;
+}
 
 .heading {
     text-transform: uppercase;
@@ -147,8 +241,19 @@ body {
 
 .activity-list {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
+.activity-list .item {
+    flex-wrap: wrap;
+    background-color: teal;
+    margin-right: 30px;
+}
+
+.activity-list .item:nth-child(3n) {
+    margin-right: 0;
+}
 
 /* our team members */
 .team-box {
@@ -165,6 +270,14 @@ body {
 
 .team-list {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list .item {
+    background-color: var(--reverse-text-color);
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .member-name {
@@ -172,6 +285,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    padding-top: 30px;
 }
 
 .job-title {
@@ -201,7 +315,9 @@ body {
     color: var(--accent-color);
 }
 
-.footer-address, .footer-telephone, .footer-mail {
+.footer-address,
+.footer-telephone,
+.footer-mail {
     color: var(--reverse-text-color);
     font-weight: 400;
     font-size: 14px;
@@ -210,15 +326,38 @@ body {
     font-style: normal;
 }
 
-.footer-telephone, .footer-mail {
+.footer-telephone,
+.footer-mail {
     opacity: 60%;
 }
 
 
- /* Potfolio page */
+/* Potfolio page */
+.portfolio-page {
+    margin-top: 94px;
+    margin-bottom: 34px;
+    outline: 2px dashed green;
+}
+
+.variants {
+    /* margin-top: 94px; */
+    /* margin-bottom: 34px; */
+    padding-bottom: 34px;
+    outline: 2px dashed blue;
+}
 
 .variants-list {
     list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.variants-list .item {
+    margin-right: 8px;
+}
+
+.variants-list .item:last-child {
+    margin-right: 0;
 }
 
 /* our proposals buttons */
@@ -243,11 +382,41 @@ body {
     background-color: var(--accent-color);
 }
 
+/* All Lists according to site net */
+/* ul li { 
+    display: inline-block;
+    margin-right: 30px;
+} */
+
 /* our projects */
+
+.projects {
+    margin-bottom: 94px;
+    outline: 2px dashed blue;
+    /* background-color: teal; */ /*cекція змінює колір і це не показує вихід (-15px) марджининів за контейнер */
+}
+
 
 .project-list {
     list-style: none;
-}
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
+
+.project-list .item {
+    width: 370px;
+    margin: 15px;
+    }
+
+/* .project-list .item:nth-child(3n) {
+        margin-right: 0;
+    }
+    
+.project-list .item:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    } */
+
 
 .company-title {
     color: var(--title-text-color);
@@ -263,7 +432,7 @@ body {
     line-height: 1.88;
 }
 
-.picture-link:hover {
+.project-list-border:hover {
     opacity: 0.2;
 }
 
@@ -277,3 +446,174 @@ body {
 /* Background team #F5F4FA */
 /* footer 60% */
 
+.project-list-border {
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+/* Container item */
+
+.container {
+    /* width: 1600px; */
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    outline: 2px dashed tomato;
+}
+
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    outline: 2px dashed blue;
+}
+
+ul {
+padding: 0;
+}
+
+
+/* flex-box training */
+/* Training #1 "6 elements grid"*/
+
+.text-container {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0 auto */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: teal;
+    margin: -15px;
+}
+
+
+.flex-element {
+    width: 380px;
+    margin: 15px;
+
+
+    /* calc((100% - кількість марджинів в рядку (2 шт) * на значення марджина 30px (= 60 px) / на кількість елементів в рядку (3)) */
+    /* width: calc((100% - 60px) / 3); */
+    /* margin-right: 30px;*/
+    /* margin-bottom: 30px; */
+
+    background-color: tomato;
+
+        /* margin-right: 30px;*/
+    /* margin-bottom: 30px; */
+}
+
+/* .flex-element:nth-child(3n) {
+    margin-right: 0;
+} */
+
+/* .flex-element:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+} */
+/* Alternative variant with the 3d element */
+
+/* .flex-element:not(:nth-child(3n)) {
+    margin-right: 30px;
+} */
+
+/* .flex-element:not(:nth-child(-n + 3)) {
+    margin-bottom: 30px; */
+
+
+
+/* flex-box training */
+/* Training #2 "4 elements grid with buttons"*/
+
+.progress {
+    margin-bottom: 95px;
+    margin-top: 95px;
+    outline: 2px dashed orange;
+    background-color: lightblue;
+    /* background-color: teal; */ /*cекція змінює колір і це не показує вихід (-15px) марджининів за контейнер */
+}
+
+.progress-title {
+    color: var(--hero-footer-background-color);
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 2.0;
+}
+
+.progress-container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -75px;
+}
+
+.progress-container .item {
+    color: var(--title-text-color);
+    width: 370px;
+    margin: 75px;
+}
+
+.btn-right {
+    text-align: right;
+}
+
+
+/* flex-box training */
+/* Training # "2 elements grid with pictures and different background-color"*/
+
+.two-options {
+    margin-bottom: 95px;
+    margin-top: 95px;
+    outline: 2px dashed lawngreen;
+}
+
+.options-title {
+    color: var(--hero-footer-background-color);
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 2.0;
+}
+
+.options-list {
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.options-list > .item {
+    display:flex;
+    align-items: center;
+    color: var(--title-text-color);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.options-list > .item:nth-child(2n) {
+    flex-direction: row-reverse;
+    background-color: lightgray;
+}
+
+.options-list > .item:nth-child(2n + 1) > .content {
+    margin-left: 84px;
+    text-align: center;
+}
+
+.options-list > .item:nth-child(2n) > .content {
+    margin-right: 84px;
+    text-align: center;
+    }
+
+/* .content {
+    text-align: center;
+} */
+
+/* End of flexbox training */

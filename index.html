@@ -17,58 +17,60 @@
 </head>
 
 <body>
-    <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
 
     <header class="page-header">
-        <div class="container">
-            <nav class="site-nav list">
-                <a href="index.html" class="link">Студия</a>
-
-                <a href="portfolio.html" class="link">Портфолио</a>
-
-                <a href="#" class="link">Контакты</a>
-            </nav>
-            <ul class="contact-nav list">
-                <li>
-                    <a href="#" class="link">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a href="#" class="link">+38 096 111 11 11</a>
-                </li>
+        <nav class="container main-nav">
+            <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
+            <ul class="site-nav list">
+                <li class="item"><a href="index.html" class="link">Студия</a></li>
+                <li class="item"><a href="portfolio.html" class="link">Портфолио</a></li>
+                <li class="item"><a href="#" class="link">Контакты</a></li>
             </ul>
-        </div>
+
+            <ul class="contact-nav list">
+                <li class="item"><a href="#" class="link">info@devstudio.com</a></li>
+                <li class="item"><a href="#" class="link">+38 096 111 11 11</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- <div class="text-container">
+<div class="flex-container">
+    <div class="flex-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis soluta velit recusandae perspiciatis. Accusamus culpa saepe quas, autem, at ad eveniet placeat animi recusandae deserunt qui consectetur vitae odit quos?</div>
+    <div class="flex-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis soluta velit recusandae perspiciatis. Accusamus culpa saepe quas, autem, at ad eveniet placeat animi recusandae deserunt qui consectetur vitae odit quos?</div>
+    <div class="flex-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis soluta velit recusandae perspiciatis. Accusamus culpa saepe quas, autem, at ad eveniet placeat animi recusandae deserunt qui consectetur vitae odit quos?</div>
+    <div class="flex-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis soluta velit recusandae perspiciatis. Accusamus culpa saepe quas, autem, at ad eveniet placeat animi recusandae deserunt qui consectetur vitae odit quos?</div>
+    <div class="flex-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis soluta velit recusandae perspiciatis. Accusamus culpa saepe quas, autem, at ad eveniet placeat animi recusandae deserunt qui consectetur vitae odit quos?</div>
+    <div class="flex-element">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis soluta velit recusandae perspiciatis. Accusamus culpa saepe quas, autem, at ad eveniet placeat animi recusandae deserunt qui consectetur vitae odit quos?</div>
+</div>
+</div> -->
+
     <main>
         <section class="hero">
-            <div class="container">
-                <div class="hero-title">
-                    <h1>Эффективные решения для вашего бизнеса</h1>
-                    <button type="submit" class="hero-button">Заказать услугу</button>
-                </div>
-            </div>
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <button type="submit" class="hero-button">Заказать услугу</button>
         </section>
 
         <!-- about us-->
-        <div class="section">
+        <section class="section">
             <div class="container">
                 <ul class="about-list">
-                    <li>
+                    <li class="item">
                         <h2 class="section-title heading">Внимание к деталям</h2>
                         <p class="description">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.</p>
                     </li>
-                    <li>
+                    <li class="item">
                         <h2 class="section-title heading">Пунктуальность</h2>
                         <p class="description">Задача организации, в особенности же рамки и место обучения кадров влечет
-                            за
-                            собой.</p>
+                            засобой.</p>
                     </li>
-                    <li>
+                    <li class="item">
                         <h2 class="section-title heading">Планирование</h2>
                         <p class="description">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
-                    <li>
+                    <li class="item">
                         <h2 class="section-title heading">Современные технологии</h2>
                         <p class="description">Значимость этих проблем настолько очевидна, что реализация плановых
                             заданий.
@@ -76,55 +78,55 @@
                     </li>
                 </ul>
             </div>
-            </section>
+        </section>
 
-            <!--activity photo-->
-            <section class="section">
-                <div class="container">
-                    <h2 class="section-title activity">Чем мы занимаемся</h2>
-                    <ul class="activity-list">
-                        <li>
-                            <img src="./images/box1.jpg" alt="desktop" width="370">
-                        </li>
-                        <li>
-                            <img src="./images/box2.jpg" alt="smartphone" width="370">
-                        </li>
-                        <li>
-                            <img src="./images/box3.jpg" alt="tablet" width="370">
-                        </li>
-                    </ul>
-                </div>
-            </section>
+        <!--activity photo-->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title activity">Чем мы занимаемся</h2>
+                <ul class="activity-list">
+                    <li class="item">
+                        <img src="./images/box1.jpg" alt="desktop" width="370">
+                    </li>
+                    <li class="item">
+                        <img src="./images/box2.jpg" alt="smartphone" width="370">
+                    </li>
+                    <li class="item">
+                        <img src="./images/box3.jpg" alt="tablet" width="370">
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-            <!--our team-->
-            <section class="section team-box">
-                <div class="container">
-                    <h2 class="section-title team">Наша команда</h2>
-                    <ul class="team-list">
-                        <li>
-                            <img src="./images/product-designer.jpg" alt="дизайнер-продукта-мужчина" width="270">
-                            <p class="member-name">Игорь Демьяненко</p>
-                            <p class="job-title">Product Designer</p>
-                        </li>
-                        <li>
-                            <img src="./images/frontend-developer.jpg" alt="фронтэнд-разработчик-женщина" width="270">
-                            <p class="member-name">Ольга Репина</p>
-                            <p class="job-title">Frontend Developer</p>
-                        </li>
-                        <li>
-                            <img src="./images/marketing.jpg" alt="маркетинг-мужчина" width="270">
-                            <p class="member-name">Николай Тарасов</p>
-                            <p class="job-title">Marketing</p>
-                        </li>
-                        <li>
+        <!--our team-->
+        <section class="section team-box">
+            <div class="container">
+                <h2 class="section-title team">Наша команда</h2>
+                <ul class="team-list">
+                    <li class="item">
+                        <img src="./images/product-designer.jpg" alt="дизайнер-продукта-мужчина" width="270">
+                        <p class="member-name">Игорь Демьяненко</p>
+                        <p class="job-title">Product Designer</p>
+                    </li>
+                    <li class="item">
+                        <img src="./images/frontend-developer.jpg" alt="фронтэнд-разработчик-женщина" width="270">
+                        <p class="member-name">Ольга Репина</p>
+                        <p class="job-title">Frontend Developer</p>
+                    </li>
+                    <li class="item">
+                        <img src="./images/marketing.jpg" alt="маркетинг-мужчина" width="270">
+                        <p class="member-name">Николай Тарасов</p>
+                        <p class="job-title">Marketing</p>
+                    </li>
+                    <li class="item">
 
-                            <img src="./images/ui-designer.jpg" alt="ю-ай-дизайнер-мужчина" width="270">
-                            <p class="member-name">Михаил Ермаков</p>
-                            <p class="job-title">UI Designer</p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
+                        <img src="./images/ui-designer.jpg" alt="ю-ай-дизайнер-мужчина" width="270">
+                        <p class="member-name">Михаил Ермаков</p>
+                        <p class="job-title">UI Designer</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer class="page-footer">
